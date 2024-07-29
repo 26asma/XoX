@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        main{
+            background: #ddb7e0;
+            text-align: center;
+            height: 100vh;
+            }
+            .container{
+            background: #e7dede;
+            height: 90vh;
+            width: 50vw;
+            position: absolute;
+            left: 50%;
+            top: 50% ;
+            transform: translate(-50%, -50%);
+          
+            
+        }
+        h1{
+            padding-top: 50px;
+        }
+        .game{
+            height: 70%;
+          display: flex;
+          gap: 10px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .r1,.r2,.r3{
+display: flex;
+gap: 10px;
+        }
+        .box{
+height: 100px;
+width: 100px;
+border: none;
+border-radius: 1rem;
+font-size: 2rem;
+color: #251825;
+        }
+        #reset{
+            width: 100px;
+            height: 50px;
+            border: none;
+            border-radius: 1rem;
+            background: #ddb7e0;
+            margin-top: 20px;
+        }
+        #new{
+            width: 100px;
+            height: 50px;
+            border: none;
+            border-radius: 1rem;
+            background: #ddb7e0;
+            margin-top: 20px;
+        }
+        #msg{
+            font-size: 2rem;
+color: #251825;
+
+        }
+        .hide{
+            display: none;
+        }
+        @media screen and (max-width:730px) {
+            .box{
+                height: 50px;
+                width: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+  
+    <main>
+        <div class="container">
+            <div class="msg-container hide">
+                <p id="msg">Winner</p>
+                <button id="new">New Game</button>
+               </div>
+            <h1>Tic-Tac-Toe</h1>
+            <div class="game">
+                <div class="r1">
+               <button class="box"></button>
+               <button class="box"></button>
+               <button class="box"></button>
+            </div>
+            <div class="r2">
+               <button class="box"></button>
+               <button class="box"></button>
+               <button class="box"></button>
+            </div>
+            <div class="r3">
+               <button class="box"></button>
+               <button class="box"></button>
+               <button class="box"></button>
+            </div>
+            <button id="reset">RESET</button>
+            </div>
+        </div>
+    </main>
+    <script src="java.js"></script>
+</body>
+</html>
